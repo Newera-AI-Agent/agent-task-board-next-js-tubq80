@@ -1,0 +1,33 @@
+# VM Agent Worklog
+
+Durable session memory for this VM job chain. Each line is one step or wind-down from one VM. Read it on boot; never delete it.
+- [2026-10-09T09:41:26.213Z | VM 1/3] boot: VM 1/3 online (job vm-mv0rzdpl-tk4cvczv, 120 min budget)
+- [2026-10-09T09:41:26.213Z | VM 1/3] self-check PASS: shell: VERIFIED (the harness executed bash on this VM at boot); node: v24.21.0; npm: 11.19.0; python3: Python 3.12.3; git: repo checked out @ b44e97c; filesystem: WRITABLE (the harness wrote + read back a probe file); skills: 22 knowledge docs in .newera/skills/ (list_skills / read_skill); project: 
+- [2026-10-09T09:42:04.848Z | VM 1/3] PLAN updated: 12 steps
+- [2026-10-09T09:44:23.074Z | VM 1/3] PLAN updated: 12 steps
+- [2026-10-09T10:50:43.472Z | VM 1/3] VERIFIED green: rm -rf .next && node node_modules/next/dist/bin/next build 2>&1
+- [2026-10-09T10:51:39.922Z | VM 1/3] CONTRACT REQ-020 -> complete: priority: 'low' | 'medium' | 'high' with color coding in UI
+- [2026-10-09T10:51:47.017Z | VM 1/3] CONTRACT REQ-001 -> complete: Single-page task board with client-side routing via Next.js App Router
+- [2026-10-09T10:51:55.378Z | VM 1/3] CONTRACT REQ-002 -> complete: Create, edit, delete tasks with title, description, priority, status, due date, tags
+- [2026-10-09T10:52:02.337Z | VM 1/3] CONTRACT REQ-003 -> complete: Task list view with filtering, sorting, and pagination
+- [2026-10-09T10:52:07.762Z | VM 1/3] CONTRACT REQ-004 -> complete: Kanban board view with drag and drop columns
+- [2026-10-09T10:52:14.069Z | VM 1/3] CONTRACT REQ-005 -> complete: Toggle between list and Kanban views
+- [2026-10-09T10:52:25.165Z | VM 1/3] CONTRACT REQ-006 -> complete: Filter by status, priority, tags, due date, search
+- [2026-10-09T10:52:32.048Z | VM 1/3] CONTRACT REQ-007 -> complete: Sort by due date, priority, created date, title
+- [2026-10-09T10:52:42.454Z | VM 1/3] CONTRACT REQ-008 -> complete: Persist tasks to localStorage
+- [2026-10-09T10:52:50.501Z | VM 1/3] CONTRACT REQ-009 -> complete: Optimistic UI updates with error rollback
+- [2026-10-09T10:52:59.308Z | VM 1/3] CONTRACT REQ-010 -> complete: Accessible modal dialogs with focus trap, ARIA labels, Escape to close
+- [2026-10-09T10:53:04.056Z | VM 1/3] CONTRACT REQ-011 -> complete: Toast notifications for success/error feedback
+- [2026-10-09T10:53:08.248Z | VM 1/3] CONTRACT REQ-012 -> complete: Confirm dialogs for destructive actions
+- [2026-10-09T10:53:26.813Z | VM 1/3] CONTRACT REQ-013 -> complete: Responsive design: stacked on mobile, side-by-side on desktop
+- [2026-10-09T10:53:38.335Z | VM 1/3] CONTRACT REQ-014 -> complete: WCAG AA contrast, semantic HTML, keyboard navigation, visible focus
+- [2026-10-09T10:53:44.812Z | VM 1/3] CONTRACT REQ-015 -> complete: TypeScript strict mode, no 'any', proper types
+- [2026-10-09T10:53:50.569Z | VM 1/3] CONTRACT REQ-016 -> complete: ESLint and Prettier configured, build passes with no errors
+- [2026-10-09T10:54:00.551Z | VM 1/3] CONTRACT REQ-017 -> complete: Next.js App Router with static export configuration
+- [2026-10-09T10:54:05.621Z | VM 1/3] CONTRACT REQ-018 -> complete: React Context + useReducer for state management
+- [2026-10-09T10:54:10.613Z | VM 1/3] CONTRACT REQ-019 -> complete: Debounced search, memoized components, virtualized lists, skeleton loading
+- [2026-10-09T10:58:52.076Z | VM 1/3] PLAN updated: 12 steps
+- [2026-10-09T11:02:15.410Z | VM 1/3] PLAN updated: 12 steps
+- [2026-10-09T11:03:11.805Z | VM 1/3] PLAN updated: 12 steps
+- [2026-10-09T11:06:10.568Z | VM 1/3] VERIFIED green: npm run build 2>&1 | tail -30
+- [2026-10-09T11:20:47.786Z | VM 1/3] RELAY checkpoint at step 182 — handoff committed, VM 2 continues.

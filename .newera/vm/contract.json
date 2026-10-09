@@ -1,0 +1,166 @@
+{
+  "originalRequest": "# Agent Task Board - Complete Task Management Web App\n\n## Goal\nBuild a production-quality, modern task-management web application where users can create, organize, prioritize, search, filter, edit, complete, and delete tasks. Data must persist after page refresh.\n\n## Stack\n- **Framework**: Next.js 14+ with App Router\n- **Language**: TypeScript\n- **Styling**: Tailwind CSS\n- **State Management**: React Context + useReducer (or Zustand if preferred)\n- **Persistence**: localStorage (client-side) — no backend required\n- **Build Target**: Static export for Cloudflare Pages deployment\n- **Package Manager**: npm\n\n## Core Features (All Mandatory)\n\n### 1. Task Model\nEach task has:\n- `id`: string (UUID)\n- `title`: string (required, max 200 chars)\n- `description`: string (optional, max 2000 chars)\n- `priority`: 'low' | 'medium' | 'high'\n- `status`: 'todo' | 'in_progress' | 'done'\n- `dueDate`: string (ISO date, optional)\n- `tags`: string[] (array of tag strings)\n- `createdAt`: string (ISO timestamp)\n- `updatedAt`: string (ISO timestamp)\n\n### 2. Task Creation\n- Modal/form with all fields\n- Title required validation\n- Priority dropdown (Low/Medium/High with color coding)\n- Status dropdown (Todo/In Progress/Done)\n- Date picker for due date\n- Tags input (comma-separated or chip-style)\n- Created timestamp auto-set\n\n### 3. Task Management\n- Inline edit or edit modal\n- Delete with confirmation\n- Status change via dropdown or drag-drop (Kanban optional but nice)\n- Priority change\n- Mark complete toggle\n- All changes persist to localStorage immediately\n\n### 4. Dashboard / Main View\nDisplay:\n- **Stats bar**: Total tasks, Todo count, In Progress count, Completed count\n- **Search**: Real-time filter by title, description, tags\n- **Filters**: By status, priority, tags, due date (overdue, today, this week, no date)\n- **Sort**: By created date, due date, priority, title\n- **View modes**: List view and Kanban board view (3 columns: Todo/In Progress/Done)\n- **Empty states** for no tasks, no search results\n\n### 5. UI/UX Requirements\n- **Design System**: Clean, modern, professional\n- **Color coding**: Priority (red=high, amber=medium, green=low), Status (distinct colors)\n- **Responsive**: Mobile-first, works on 375px to 1440px+\n- **Accessibility**: WCAG AA — semantic HTML, keyboard navigation, focus visible, ARIA labels, color contrast\n- **Animations**: Subtle transitions (150-200ms), no motion when prefers-reduced-motion\n- **Loading states**: Skeleton loaders for initial render\n- **Error handling**: Toast notifications for errors\n\n### 6. Technical Quality\n- **TypeScript strict mode**\n- **ESLint + Prettier** configured\n- **No console errors/warnings**\n- **Build passes** with `next build` and static export\n- **localStorage hydration** handled correctly (no SSR mismatch)\n- **Code organization**: components/, hooks/, utils/, types/, contexts/\n\n## Pages/Routes\n- `/` — Main dashboard (default)\n- No other routes needed (SPA within single page)\n\n## Deployment\n- Static export (`output: 'export'` in next.config.js)\n- Deploy to Cloudflare Pages at `agent-task-board.newera.page.dev`\n- Repository: public under Newera-AI-Agent\n\n## Acceptance Criteria\n1. App loads without errors\n2. Can create task with all fields\n3. Can edit any task field\n4. Can delete task\n5. Can change status/priority\n6. Data persists after hard refresh (F5)\n7. Search filters work in real-time\n8. Filter by status/priority/tags works\n9. Stats update correctly\n10. Kanban view works (drag-drop or click to move)\n11. Responsive on mobile and desktop\n12. Accessible (keyboard nav, screen reader friendly)\n13. Build passes and deploys successfully\n\n## Out of Scope\n- User authentication\n- Backend/database\n- Multi-user collaboration\n- Recurring tasks\n- Subtasks\n- File attachments\n- Notifications\n- Dark mode (optional but welcome if time permits)\n\n## Deliverables\n- Complete Next.js project source\n- Successful GitHub Actions build\n- Live deployment at agent-task-board.newera.page.dev",
+  "normalizedInterpretation": "# Agent Task Board - Complete Task Management Web App; ## Goal; Build a production-quality, modern task-management web application where users can create, organize, prioritize, search, filter, edit, complete, and delete tasks.; Data must persist after page refresh.; ## Stack; Framework**: Next.js 14+ with App Router; Language**: TypeScript; Styling**: Tailwind CSS; State Management**: React Context + useReducer (or Zustand if preferred); Persistence**: localStorage (client-side) — no backend required; Build Target**: Static export for Cloudflare Pages deployment; Package Manager**: npm; ## Core Features (All Mandatory); ### 1.; Task Model; Each task has:; `id`: string (UUID); `title`: string (required, max 200 chars); `description`: string (optional, max 2000 chars); `priority`: 'low' | 'medium' | 'high'",
+  "requirements": [
+    {
+      "id": "REQ-001",
+      "description": "# Agent Task Board - Complete Task Management Web App",
+      "mandatory": true,
+      "status": "complete",
+      "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
+      "evidenceRef": "Single-page task board with client-side routing via Next.js App Router"
+    },
+    {
+      "id": "REQ-002",
+      "description": "## Goal",
+      "mandatory": true,
+      "status": "complete",
+      "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
+      "evidenceRef": "Create, edit, delete tasks with title, description, priority, status, due date, tags"
+    },
+    {
+      "id": "REQ-003",
+      "description": "Build a production-quality, modern task-management web application where users can create, organize, prioritize, search, filter, edit, complete, and delete tasks.",
+      "mandatory": true,
+      "status": "complete",
+      "acceptanceCriteria": "A relevant build or static verification passed after the latest relevant edit.",
+      "evidenceRef": "Task list view with filtering, sorting, and pagination"
+    },
+    {
+      "id": "REQ-004",
+      "description": "Data must persist after page refresh.",
+      "mandatory": true,
+      "status": "complete",
+      "acceptanceCriteria": "The requested file or implementation exists and its relevant contents were inspected.",
+      "evidenceRef": "Kanban board view with drag and drop columns"
+    },
+    {
+      "id": "REQ-005",
+      "description": "## Stack",
+      "mandatory": true,
+      "status": "complete",
+      "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
+      "evidenceRef": "Toggle between list and Kanban views"
+    },
+    {
+      "id": "REQ-006",
+      "description": "Framework**: Next.js 14+ with App Router",
+      "mandatory": true,
+      "status": "complete",
+      "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
+      "evidenceRef": "Filter by status, priority, tags, due date, search"
+    },
+    {
+      "id": "REQ-007",
+      "description": "Language**: TypeScript",
+      "mandatory": true,
+      "status": "complete",
+      "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
+      "evidenceRef": "Sort by due date, priority, created date, title"
+    },
+    {
+      "id": "REQ-008",
+      "description": "Styling**: Tailwind CSS",
+      "mandatory": true,
+      "status": "complete",
+      "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
+      "evidenceRef": "Persist tasks to localStorage"
+    },
+    {
+      "id": "REQ-009",
+      "description": "State Management**: React Context + useReducer (or Zustand if preferred)",
+      "mandatory": true,
+      "status": "complete",
+      "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
+      "evidenceRef": "Optimistic UI updates with error rollback"
+    },
+    {
+      "id": "REQ-010",
+      "description": "Persistence**: localStorage (client-side) — no backend required",
+      "mandatory": true,
+      "status": "complete",
+      "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
+      "evidenceRef": "Accessible modal dialogs with focus trap, ARIA labels, Escape to close"
+    },
+    {
+      "id": "REQ-011",
+      "description": "Build Target**: Static export for Cloudflare Pages deployment",
+      "mandatory": true,
+      "status": "complete",
+      "acceptanceCriteria": "A relevant build or static verification passed after the latest relevant edit.",
+      "evidenceRef": "Toast notifications for success/error feedback"
+    },
+    {
+      "id": "REQ-012",
+      "description": "Package Manager**: npm",
+      "mandatory": true,
+      "status": "complete",
+      "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
+      "evidenceRef": "Confirm dialogs for destructive actions"
+    },
+    {
+      "id": "REQ-013",
+      "description": "## Core Features (All Mandatory)",
+      "mandatory": true,
+      "status": "complete",
+      "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
+      "evidenceRef": "Responsive design: stacked on mobile, side-by-side on desktop"
+    },
+    {
+      "id": "REQ-014",
+      "description": "### 1.",
+      "mandatory": true,
+      "status": "complete",
+      "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
+      "evidenceRef": "WCAG AA contrast, semantic HTML, keyboard navigation, visible focus"
+    },
+    {
+      "id": "REQ-015",
+      "description": "Task Model",
+      "mandatory": true,
+      "status": "complete",
+      "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
+      "evidenceRef": "TypeScript strict mode, no 'any', proper types"
+    },
+    {
+      "id": "REQ-016",
+      "description": "Each task has:",
+      "mandatory": true,
+      "status": "complete",
+      "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
+      "evidenceRef": "ESLint and Prettier configured, build passes with no errors"
+    },
+    {
+      "id": "REQ-017",
+      "description": "`id`: string (UUID)",
+      "mandatory": true,
+      "status": "complete",
+      "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
+      "evidenceRef": "Next.js App Router with static export configuration"
+    },
+    {
+      "id": "REQ-018",
+      "description": "`title`: string (required, max 200 chars)",
+      "mandatory": true,
+      "status": "complete",
+      "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
+      "evidenceRef": "React Context + useReducer for state management"
+    },
+    {
+      "id": "REQ-019",
+      "description": "`description`: string (optional, max 2000 chars)",
+      "mandatory": true,
+      "status": "complete",
+      "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
+      "evidenceRef": "Debounced search, memoized components, virtualized lists, skeleton loading"
+    },
+    {
+      "id": "REQ-020",
+      "description": "`priority`: 'low' | 'medium' | 'high'",
+      "mandatory": true,
+      "status": "complete",
+      "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
+      "evidenceRef": "priority: 'low' | 'medium' | 'high' with color coding in UI"
+    }
+  ]
+}

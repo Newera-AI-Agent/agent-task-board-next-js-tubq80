@@ -47,6 +47,7 @@ Scripts: `dev`, `build`, `start`, `lint`, `format`
 - default export: `RootLayout`
 
 ### `src/app/page.tsx` - 271 lines
+- imports: `src/contexts/TaskContext.tsx`, `src/components/index.ts`
 - `Page` (function)
 - default export: `Page`
 
@@ -132,5 +133,3 @@ Scripts: `dev`, `build`, `start`, `lint`, `format`
 ## Unresolved references
 
 - `src/app/page.tsx:4` imports `../../types/task` - **this file does not exist yet**
-- `src/app/page.tsx:5` imports `../../contexts/TaskContext` - **this file does not exist yet**
-- `src/app/page.tsx:6` imports `../../components` - **this file does not exist yet**

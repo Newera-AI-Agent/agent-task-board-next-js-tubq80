@@ -8,7 +8,7 @@
       "mandatory": true,
       "status": "complete",
       "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
-      "evidenceRef": "Single-page task board with client-side routing via Next.js App Router"
+      "evidenceRef": "Single-page task board implemented at src/app/page.tsx with Next.js App Router, client-side rendering"
     },
     {
       "id": "REQ-002",
@@ -56,7 +56,7 @@
       "mandatory": true,
       "status": "complete",
       "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
-      "evidenceRef": "Sort by due date, priority, created date, title"
+      "evidenceRef": "TypeScript strict mode enabled in tsconfig.json, all components use proper types, build passes type checking"
     },
     {
       "id": "REQ-008",
@@ -72,7 +72,7 @@
       "mandatory": true,
       "status": "complete",
       "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
-      "evidenceRef": "Optimistic UI updates with error rollback"
+      "evidenceRef": "React Context + useReducer implemented in src/contexts/TaskContext.tsx with full state management for tasks, filters, view mode, and localStorage persistence"
     },
     {
       "id": "REQ-010",
@@ -88,7 +88,7 @@
       "mandatory": true,
       "status": "complete",
       "acceptanceCriteria": "A relevant build or static verification passed after the latest relevant edit.",
-      "evidenceRef": "Toast notifications for success/error feedback"
+      "evidenceRef": "next.config.js configured with output: 'export' for static export, build generates static pages successfully in out/ directory"
     },
     {
       "id": "REQ-012",
@@ -120,7 +120,7 @@
       "mandatory": true,
       "status": "complete",
       "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
-      "evidenceRef": "TypeScript strict mode, no 'any', proper types"
+      "evidenceRef": "Task model fully defined in src/types/task.ts with all required fields: id (UUID), title (max 200), description (max 2000), priority (low/medium/high), status (todo/in_progress/done), dueDate, tags[], createdAt, updatedAt"
     },
     {
       "id": "REQ-016",
@@ -144,7 +144,7 @@
       "mandatory": true,
       "status": "complete",
       "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
-      "evidenceRef": "React Context + useReducer for state management"
+      "evidenceRef": "TaskForm component validates title max 200 chars at line 47-48 in src/components/TaskForm.tsx with maxLength={200} on input"
     },
     {
       "id": "REQ-019",

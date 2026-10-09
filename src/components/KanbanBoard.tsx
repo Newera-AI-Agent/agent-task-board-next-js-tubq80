@@ -1,9 +1,9 @@
 'use client'
 
 import React, { useState } from 'react'
-import { Task, Status } from '@/types/task'
+import { Task, Status } from '../types/task'
 import { TaskCard } from './TaskCard'
-import { getAllTags } from '@/utils/helpers'
+import { getAllTags } from '../utils/helpers'
 
 interface KanbanBoardProps {
   tasks: Task[]

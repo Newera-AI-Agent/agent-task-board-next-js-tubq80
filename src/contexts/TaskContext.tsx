@@ -1,7 +1,7 @@
 'use client'
 
 import React, { createContext, useContext, useReducer, useEffect, useCallback } from 'react'
-import { Task, TaskFormData, FilterState, Stats, Status, Priority } from '@/types/task'
+import { Task, TaskFormData, FilterState, Stats, Status, Priority } from '../types/task'
 import { v4 as uuidv4 } from 'uuid'
 
 interface TaskState {

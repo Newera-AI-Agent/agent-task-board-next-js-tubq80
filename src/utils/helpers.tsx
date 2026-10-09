@@ -1,4 +1,4 @@
-import { Task, Priority, Status } from '@/types/task'
+import { Task, Priority, Status } from '../types/task'
 
 export function formatDate(dateString: string | null): string {
   if (!dateString) return ''

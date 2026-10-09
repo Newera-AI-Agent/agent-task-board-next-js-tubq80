@@ -1,8 +1,8 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
-import { FilterState, Status, Priority, DUE_DATE_FILTER_OPTIONS, SORT_OPTIONS, STATUS_OPTIONS, PRIORITY_OPTIONS } from '@/types/task'
-import { getAllTags } from '@/utils/helpers'
+import { FilterState, Status, Priority, DUE_DATE_FILTER_OPTIONS, SORT_OPTIONS, STATUS_OPTIONS, PRIORITY_OPTIONS } from '../types/task'
+import { getAllTags } from '../utils/helpers'
 
 interface SearchFilterProps {
   filter: FilterState

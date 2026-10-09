@@ -1,8 +1,8 @@
 'use client'
 
 import React from 'react'
-import { Task, Priority, Status } from '@/types/task'
-import { formatDate, isOverdue, isDueToday, getPriorityColor, getStatusColor, truncate, getPriorityIcon } from '@/utils/helpers'
+import { Task, Priority, Status } from '../types/task'
+import { formatDate, isOverdue, isDueToday, getPriorityColor, getStatusColor, truncate, getPriorityIcon } from '../utils/helpers'
 
 interface TaskCardProps {
   task: Task

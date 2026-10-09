@@ -1,9 +1,9 @@
 'use client'
 
 import React from 'react'
-import { Task } from '@/types/task'
+import { Task } from '../types/task'
 import { TaskCard } from './TaskCard'
-import { formatDate, isOverdue, isDueToday } from '@/utils/helpers'
+import { formatDate, isOverdue, isDueToday } from '../utils/helpers'
 
 interface TaskListProps {
   tasks: Task[]

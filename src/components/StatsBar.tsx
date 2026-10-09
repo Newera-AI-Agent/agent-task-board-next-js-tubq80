@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { Stats } from '@/types/task'
+import { Stats } from '../types/task'
 
 interface StatsBarProps {
   stats: Stats

@@ -1,8 +1,8 @@
 'use client'
 
 import React, { useState, useCallback } from 'react'
-import { Task, TaskFormData, FilterState, ViewMode } from '@/types/task'
-import { TaskProvider, useTaskContext } from '@/contexts/TaskContext'
+import { Task, TaskFormData, FilterState, ViewMode } from '../../types/task'
+import { TaskProvider, useTaskContext } from '../../contexts/TaskContext'
 import {
   TaskForm,
   TaskList,
@@ -17,7 +17,7 @@ import {
   ConfirmDialog,
   ToastProvider,
   useToast,
-} from '@/components'
+} from '../../components'
 
 function DashboardContent() {
   const { tasks, filter, viewMode, isLoading, isHydrated, addTask, updateTask, deleteTask, toggleTaskStatus, setFilter, setViewMode, getFilteredTasks, getStats } = useTaskContext()

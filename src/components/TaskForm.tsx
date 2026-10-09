@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
-import { TaskFormData, Priority, Status, PRIORITY_OPTIONS, STATUS_OPTIONS } from '@/types/task'
+import { TaskFormData, Priority, Status, PRIORITY_OPTIONS, STATUS_OPTIONS } from '../types/task'
 
 interface TaskFormProps {
   initialData?: Partial<TaskFormData>
